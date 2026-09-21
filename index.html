@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ЭкоЦикл</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#10B981">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="index">
+
+<div id="scrollbar"></div>
+
+<header class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 13.3-6M20 12a8 8 0 0 1-13.3 6"/><path d="M17 2.5V6.5h-4M7 21.5V17.5h4"/></svg>
+      Эко<em>Цикл</em>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index" data-i18n="nav.home">Главная</a></li>
+      <li><a href="living-path.html" data-page="living-path" data-i18n="nav.livingPath">Живой путь</a></li>
+      <li><a href="sharing.html" data-page="sharing" data-i18n="nav.sharing">Шеринг</a></li>
+      <li><a href="junior.html" data-page="junior" data-i18n="nav.junior">Детям</a></li>
+      <li><a href="community.html" data-page="community" data-i18n="nav.community">Сообщество</a></li>
+      <li><a href="tech.html" data-page="tech" data-i18n="nav.tech">Технологии</a></li>
+      <li><a href="impact.html" data-page="impact" data-i18n="nav.impact">Эффект</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="lang">
+        <button class="lang-btn" type="button" aria-expanded="false" aria-label="Language">
+          <span>RU</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button type="button" data-lang="ru"><span class="flag">🇷🇺</span> Русский</button>
+          <button type="button" data-lang="kk"><span class="flag">🇰🇿</span> Қазақша</button>
+          <button type="button" data-lang="uz"><span class="flag">🇺🇿</span> O‘zbekcha</button>
+          <button type="button" data-lang="ky"><span class="flag">🇰🇬</span> Кыргызча</button>
+          <button type="button" data-lang="tg"><span class="flag">🇹🇯</span> Тоҷикӣ</button>
+          <button type="button" data-lang="hy"><span class="flag">🇦🇲</span> Հայերեն</button>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="waitlist.html" data-i18n="nav.waitlist">Ранний доступ</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-panel" id="mobilePanel">
+    <a href="index.html" data-page="index" data-close data-i18n="nav.home">Главная</a>
+    <a href="living-path.html" data-page="living-path" data-close data-i18n="nav.livingPath">Живой путь</a>
+    <a href="sharing.html" data-page="sharing" data-close data-i18n="nav.sharing">Шеринг</a>
+    <a href="junior.html" data-page="junior" data-close data-i18n="nav.junior">Детям</a>
+    <a href="community.html" data-page="community" data-close data-i18n="nav.community">Сообщество</a>
+    <a href="tech.html" data-page="tech" data-close data-i18n="nav.tech">Технологии</a>
+    <a href="impact.html" data-page="impact" data-close data-i18n="nav.impact">Эффект</a>
+    <a class="btn btn-primary" href="waitlist.html" data-close data-i18n="nav.waitlist">Ранний доступ</a>
+    <div class="mobile-langs">
+      <button type="button" data-lang="ru">RU</button>
+      <button type="button" data-lang="kk">KK</button>
+      <button type="button" data-lang="uz">UZ</button>
+      <button type="button" data-lang="ky">KY</button>
+      <button type="button" data-lang="tg">TG</button>
+      <button type="button" data-lang="hy">HY</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-badges">
+        <span class="badge" data-i18n="home.badge1">ECOHACK 2026 · РЭО</span>
+        <span class="badge" data-i18n="home.badge2">MVP-прототип</span>
+      </div>
+      <h1 data-i18n="home.heroTitle" data-i18n-html>Эко<em>Цикл</em> — доверие к переработке, а не обещание</h1>
+      <p class="lede" data-i18n="home.heroLede">Кроссплатформенная эко-соцсеть и прозрачный проводник в экономику замкнутого цикла.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="living-path.html" data-i18n="home.ctaLiving">Посмотреть живой путь</a>
+        <a class="btn btn-outline" href="#product" data-i18n="home.ctaModules">Все модули продукта</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>80%</b><span data-i18n="home.stat1">не сортируют отходы</span></div>
+        <div><b>4</b><span data-i18n="home.stat2">модуля в одном приложении</span></div>
+        <div><b>15–20%</b><span data-i18n="home.stat3">меньше нагрузка на полигоны</span></div>
+      </div>
+    </div>
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="screen">
+          <div class="scr-top"><span>9:41</span><span>Калининград</span></div>
+          <div>
+            <div class="scr-h">Живой путь вещи</div>
+            <div class="scr-sub">Пластиковая ручка · PP 05</div>
+          </div>
+          <div class="chain-mini">
+            <div class="cmi"><span class="bead"></span><span><b>Сбор</b>контейнер во дворе</span></div>
+            <div class="cmi"><span class="bead"></span><span><b>Сортировка</b>МСК «Круглово»</span></div>
+            <div class="cmi"><span class="bead"></span><span><b>Оператор «Эко-Партнёр»</b>Калининградская область</span></div>
+            <div class="cmi"><span class="bead open"></span><span><b>Гранулы</b>0,9 кг сырья</span></div>
+            <div class="cmi"><span class="bead open"></span><span><b>Наполнитель для подушек</b>вторая жизнь</span></div>
+          </div>
+          <div class="scr-cta">Смотреть путь целиком →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="home.howTitle">Как это работает</p>
+      <h2 class="h2" data-i18n="home.howSub">Четыре шага — от сканирования до подтверждённой переработки.</h2>
+    </div>
+    <div class="how-grid reveal">
+      <div class="how-card"><div class="num">01</div><div class="h3" data-i18n="home.how1Title">Сканируете</div><p class="p" data-i18n="home.how1Text">Камера распознаёт материал по фото.</p></div>
+      <div class="how-card"><div class="num">02</div><div class="h3" data-i18n="home.how2Title">Видите путь</div><p class="p" data-i18n="home.how2Text">Приложение строит цепочку до продукта.</p></div>
+      <div class="how-card"><div class="num">03</div><div class="h3" data-i18n="home.how3Title">Отдаёте или сдаёте</div><p class="p" data-i18n="home.how3Text">Вещь в шеринг, вторсырьё в переработку.</p></div>
+      <div class="how-card"><div class="num">04</div><div class="h3" data-i18n="home.how4Title">Получаете эффект</div><p class="p" data-i18n="home.how4Text">Счётчик показывает килограммы и CO₂.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="audience">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="home.audienceTitle">Для кого</p>
+      <h2 class="h2" data-i18n="home.audienceSub">Один продукт закрывает потребности всей семьи.</h2>
+    </div>
+    <div class="aud-grid reveal">
+      <div class="aud-card"><div class="h3" data-i18n="home.aud1Title">Школьники</div><p class="p" data-i18n="home.aud1Text">Игра и квесты формируют привычку.</p></div>
+      <div class="aud-card"><div class="h3" data-i18n="home.aud2Title">Взрослые</div><p class="p" data-i18n="home.aud2Text">Шеринг и прозрачный путь отходов.</p></div>
+      <div class="aud-card"><div class="h3" data-i18n="home.aud3Title">Региональные операторы</div><p class="p" data-i18n="home.aud3Text">Данные о потоках фракций.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="home.whyNowTitle">Почему сейчас</p>
+      <h2 class="h2" data-i18n="home.whyNowSub">Реформа РОП и запрос на доверие к переработке.</h2>
+    </div>
+    <div class="why-list reveal">
+      <div><span class="num">01</span><p class="p" data-i18n="home.why1">80% не сортируют, потому что не верят в переработку.</p></div>
+      <div><span class="num">02</span><p class="p" data-i18n="home.why2">Реформа РОП требует прозрачных данных о потоках отходов.</p></div>
+      <div><span class="num">03</span><p class="p" data-i18n="home.why3">C2C-шеринг снижает нагрузку на полигоны на 15–20%.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="product">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="home.modulesTitle">Модули продукта</p>
+      <h2 class="h2" data-i18n="home.modulesSub">Четыре модуля в одном приложении.</h2>
+    </div>
+    <div class="mod-grid reveal">
+      <a class="mod-card" href="living-path.html">
+        <span class="idx">01</span>
+        <div class="h3">«Живой Путь Вещи»</div>
+        <p class="p">Трекер трансформации отходов на данных реальных заводов и операторов.</p>
+        <span class="go">Открыть демо →</span>
+      </a>
+      <a class="mod-card" href="junior.html">
+        <span class="idx">02</span>
+        <div class="h3">«Эко-Детям»</div>
+        <p class="p">Игровые комиксы, симуляторы эко-заводов и квесты для детей.</p>
+        <span class="go">Смотреть квесты →</span>
+      </a>
+      <a class="mod-card" href="sharing.html">
+        <span class="idx">03</span>
+        <div class="h3">«Отдам»</div>
+        <p class="p">C2C-маркетплейс бесплатного самовывоза вещей с расчётом эко-эффекта.</p>
+        <span class="go">Открыть маркетплейс →</span>
+      </a>
+      <a class="mod-card" href="community.html">
+        <span class="idx">04</span>
+        <div class="h3">«Эко-Сообщество»</div>
+        <p class="p">Календарь локальных эко-фестивалей и клубов по интересам.</p>
+        <span class="go">Смотреть календарь →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="home.faqTitle">Частые вопросы</p>
+    </div>
+    <div class="faq reveal">
+      <details><summary data-i18n="home.faq1Q">Это рабочий сервис?</summary><p data-i18n="home.faq1A">Нет, это MVP-прототип для ECOHACK 2026.</p></details>
+      <details><summary data-i18n="home.faq2Q">Когда откроется доступ?</summary><p data-i18n="home.faq2A">Оставьте почту в разделе «Ранний доступ».</p></details>
+      <details><summary data-i18n="home.faq3Q">Как вы считаете CO₂?</summary><p data-i18n="home.faq3A">По весу вещи и коэффициенту категории.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="cta" style="padding:88px 0">
+  <div class="container cta-wrap">
+    <div>
+      <p class="eyebrow" data-i18n="waitlist.eyebrow">Ранний доступ</p>
+      <h2 class="h2" data-i18n="home.ctaTitle">Станьте первыми в пилоте</h2>
+      <p class="lede" data-i18n="home.ctaSub">Оставьте почту — сообщим, когда откроется доступ в вашем регионе.</p>
+      <ul class="cta-list">
+        <li data-i18n="home.why1">80% не сортируют, потому что не верят.</li>
+        <li data-i18n="home.why2">Реформа РОП требует прозрачных данных.</li>
+        <li data-i18n="home.why3">C2C-шеринг снижает нагрузку на 15–20%.</li>
+      </ul>
+    </div>
+    <div class="cta-card">
+      <form class="wl-form" id="wlForm" novalidate>
+        <div class="wl-row">
+          <input type="email" id="wlEmail" autocomplete="email" required data-i18n-placeholder="waitlist.placeholder" placeholder="you@example.com">
+          <button type="submit" class="btn btn-accent" data-i18n="home.ctaButton">Хочу первым попробовать</button>
+        </div>
+        <div class="wl-msg" id="wlMsg"></div>
+        <div class="wl-note" data-i18n="home.ctaNote">Форма демонстрационная.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="fbrand">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 13.3-6M20 12a8 8 0 0 1-13.3 6"/><path d="M17 2.5V6.5h-4M7 21.5V17.5h4"/></svg>
+          ЭкоЦикл
+        </div>
+        <p class="foot-tagline" data-i18n="footer.tagline">Эко-соцсеть и прозрачный проводник в экономику замкнутого цикла.</p>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="footer.product">Продукт</h5>
+        <a href="living-path.html" data-i18n="nav.livingPath">Живой путь</a>
+        <a href="sharing.html" data-i18n="nav.sharing">Шеринг</a>
+        <a href="junior.html" data-i18n="nav.junior">Детям</a>
+        <a href="community.html" data-i18n="nav.community">Сообщество</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="footer.company">Проект</h5>
+        <a href="tech.html" data-i18n="nav.tech">Технологии</a>
+        <a href="impact.html" data-i18n="nav.impact">Эффект</a>
+        <a href="waitlist.html" data-i18n="nav.waitlist">Ранний доступ</a>
+      </div>
+      <div class="foot-col">
+        <h5 data-i18n="footer.contacts">Контакты</h5>
+        <a href="mailto:team@axl.eco" data-i18n="footer.contactsValue">team@axl.eco</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-langs">
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="kk">KK</button>
+        <button type="button" data-lang="uz">UZ</button>
+        <button type="button" data-lang="ky">KY</button>
+        <button type="button" data-lang="tg">TG</button>
+        <button type="button" data-lang="hy">HY</button>
+      </div>
+      <div data-i18n="footer.copyright">© 2026 · ECOHACK 2026 · Российский экологический оператор</div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"><span class="dot"></span><span id="toastText"></span></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
