@@ -140,7 +140,7 @@
       "frontend": "Frontend",
       "frontendText": "React, React Native, PWA։",
       "backend": "Backend",
-      "backendText": "Python (FastAPI), PostgreSQL, PostGIS։",
+      "backendText": "Python (Flask), PostgreSQL, PostGIS։",
       "ai": "AI-մոդուլ",
       "aiText": "PyTorch / YOLOv8։",
       "integrations": "Ինտեգրացիաներ",
